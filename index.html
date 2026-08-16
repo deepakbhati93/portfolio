@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio - Fresher Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css.css">
+        <script src="js.js" defer></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+    </div>
+
+    <!-- Stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">👋 Hi, I'm</div>
+                <h1 class="hero-name">Deepak Bhati</h1>
+                <div class="hero-title">Developer</div>
+                <p class="hero-description">
+                    A passionate fresher developer with a strong foundation in web technologies. 
+                    Eager to create innovative solutions and contribute to meaningful projects. 
+                    Ready to bring fresh ideas and enthusiasm to any development team.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring"></div>
+                    <div class="profile-image" id="profileImage">
+                        <img src="photo1.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+I'm a passionate Artificial Intelligence and Machine Learning enthusiast with a strong foundation in Computer Science and Data Analytics. I enjoy exploring how data, algorithms, and intelligent systems can be used to solve real-world problems and create impactful solutions.
+                    </p>
+                    <p>
+                       I continuously learn new technologies and strengthen my skills in Machine Learning, Data Analysis, Python, and AI. I enjoy working with data, identifying meaningful patterns, building predictive models, and transforming insights into practical solutions.
+                    </p>
+                    <p>
+                        My goal is to work on innovative AI/ML and data-driven projects where I can apply my technical skills, learn from experienced professionals, and grow as a developer while contributing to impactful solutions.
+                    </p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card fade-in">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-number">2027</div>
+                        <div class="stat-label">Graduated</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🤖</div>
+                <h3>Artificial Intelligence</h3>
+                <p>AI Fundamentals, Generative AI, NLP, Computer Vision, Intelligent Systems</p>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🧠</div>
+                <h3>Machine Learning</h3>
+                <p>Supervised Learning, Unsupervised Learning, Regression, Classification, Model Evaluation</p>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">📊</div>
+                <h3>Data Analytics</h3>
+                <p>Data Cleaning, Exploratory Data Analysis, Data Visualization, Statistical Analysis, Insights</p>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🐍</div>
+                <h3>Python & Libraries</h3>
+                <p>Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn</p>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">📈</div>
+                <h3>Data Visualization</h3>
+                <p>Matplotlib, Seaborn, Power BI, Interactive Dashboards, Charts and Business Insights</p>
+            </div>
+
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🗄️</div>
+                <h3>Database & Tools</h3>
+                <p>MySQL, MongoDB, Jupyter Notebook, Git, GitHub, VS Code, APIs</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                
+                 <div class="project-card fade-in">
+                    <div class="project-image">🏥</div>
+                    <div class="project-content">
+                        <h3>Hospital Readmission System</h3>
+                        <p>An AI-based system that predicts whether a patient is likely to be readmitted to the hospital** using their medical and demographic data.
+It helps hospitals **identify high-risk patients and improve follow-up care.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Jupyter Notebook</span>
+                            <span class="tag">Seaborn</span>
+                            <span class="tag">Git & GitHub</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://hospital-readmission42.streamlit.app/" class="project-link" target="_blank">Live Demo</a>
+                            <a href="https://github.com/deepakbhati93/hospital-readmission" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">🎬</div>
+                    <div class="project-content">
+                        <h3>Movie recommendation System</h3>
+                        <p>Developed a machine learning-based Movie Recommendation System that analyzes user preferences, movie ratings, genres, and viewing history to provide personalized movie suggestions. The system improves user experience by recommending relevant and similar movies based on individual interests.
+</p>
+                        <div class="project-tags">
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Scikit-learn</span>
+                             <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://movie-recommendation-system42.streamlit.app/" class="project-link">Live Demo</a>
+                            <a href="https://github.com/deepakbhati93/movie-recommendation-system" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="project-card fade-in">
+                    <div class="project-image">🚗</div>
+                    <div class="project-content">
+                        <h3>Car price prediction System</h3>
+                        <p>Developed a machine learning-based Car Price Prediction System that analyzes various factors such as brand, model, year, mileage, and other features to provide accurate price estimates. The system helps users make informed decisions when buying or selling cars by offering reliable pricing insights.
+</p>
+                        <div class="project-tags">
+                            <span class="tag">Regression</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Seaborn </span>
+                            <span class="tag">Git & GitHub</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Scikit-learn</span>
+                             <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://car-price-prediction42.streamlit.app/" class="project-link">Live Demo</a>
+                            <a href="https://github.com/deepakbhati93/car-price-prediction" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card fade-in">
+                    <div class="project-image">⚡</div>
+                    <div class="project-content">
+                        <h3>Smart Campus energy monitoring System</h3>
+                        <p>The Smart Campus Energy Monitoring System is a software-based platform that collects, analyzes, and visualizes real-time energy consumption data from campus buildings to optimize electricity usage. It identifies energy wastage, generates intelligent alerts and reports, and supports data-driven decisions for a sustainable and energy-efficient campus.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">📝</div>
+                    <div class="project-content">
+                        <h3>EduFree</h3>
+                        <p>EduFree is an AI-powered learning platform that provides free study materials for students of Classes 9–12 across all education boards, along with personalized academic guidance and learning support. It makes quality education accessible anytime, anywhere through organized notes, AI assistance, and a simple, user-friendly experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bootstrap 5</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+           
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <a class="contact-item" href="mailto:deepakbhatidbhati@gmail.com?subject=Portfolio%20Contact" aria-label="Email Deepak Bhati">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>deepakbhatidbhati@gmail.com</p>
+                        </div>
+                    </a>
+                    <a class="contact-item" href="tel:+919389828517" aria-label="Call Deepak Bhati">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 9389828517</p>
+                        </div>
+                    </a>
+                    <a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=Ronija+Greater+Noida+India" target="_blank" rel="noreferrer" aria-label="Open Greater Noida location in Google Maps">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Greater Noida, India</p>
+                        </div>
+                    </a>
+                    <a class="contact-item" href="https://www.linkedin.com/in/deepak-bhati-74bb89276/" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile in a new tab">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/deepak-bhati-74bb89276</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contact-form">
+                    <div class="status-message success-message" id="successMessage" role="alert" aria-live="polite">
+                        ✨ Thank you! Your message has been sent successfully.
+                    </div>
+                    <div class="status-message error-message" id="errorMessage" role="alert" aria-live="assertive"></div>
+                    <form id="contactForm" name="contact" method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitButton">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/deepak-bhati-74bb89276/" class="social-link" aria-label="LinkedIn">💼</a>
+            <a href="https://github.com/deepakbhati93" class="social-link" aria-label="GitHub">🔗</a>
+            <a href="https://x.com/DeepakB15624370" class="social-link" aria-label="Twitter">🐦</a>
+            <a href=https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" class="social-link" aria-label="Email">📧</a>
+        </div>
+        <p>&copy; 2026 Deepak Bhati. Built with 💙 and ☕</p>
+    </footer>
+
+</body>
+</html>
